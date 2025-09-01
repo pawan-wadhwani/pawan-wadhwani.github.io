@@ -22,6 +22,7 @@ html, p{
 }
 p{
     margin: 0.2em;
+    
 }
 
 ol, ul {
@@ -88,11 +89,17 @@ strong {
 #profile {
     padding: 90px 30px 10px 30px;
     border-bottom: 1px solid #ddd;
+    overflow: hidden; /* Add this line */
+}
+
+#profile-content {
+    overflow: hidden; /* This prevents the text from wrapping under the floated image */
 }
 
 #profile-pic {
     float: left;
     margin-right: 40px;
+    margin-top: 60px; /* Add this - adjust the value as needed */
     text-align: center;
 }
 
