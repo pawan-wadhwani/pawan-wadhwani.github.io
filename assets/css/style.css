@@ -97,11 +97,11 @@ strong {
 }
 
 #profile-pic {
-    float: left;
-    margin-right: 40px;
-    margin-top: 60px; /* Add this - adjust the value as needed */
+    float: none;         /* stop the float from pushing things weirdly */
+    margin: 0 auto 20px auto; /* center the photo */
     text-align: center;
 }
+
 
 #profile img {
     width: 400px;
@@ -150,24 +150,4 @@ strong {
 .research-proj-title {
     color: var(--blue1);
     font-weight: 400;
-}
-
-@media (max-width: 768px) {
-    #profile {
-        text-align: center; /* centers all child content */
-    }
-
-    #profile-pic {
-        float: none;
-        margin: 0 auto 20px auto;
-    }
-
-    #profile-content {
-        text-align: center; /* center-aligns heading + email + links */
-    }
-
-    #profile-name,
-    #profile-email {
-        text-align: center !important; /* force override */
-    }
 }
