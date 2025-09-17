@@ -151,3 +151,17 @@ strong {
     color: var(--blue1);
     font-weight: 400;
 }
+
+@media (max-width: 768px) {
+    #profile {
+        text-align: center; /* center all children */
+    }
+    #profile-pic {
+        float: none;
+        margin: 0 auto 20px auto;
+    }
+    #profile-name,
+    #profile-email {
+        text-align: center; /* override desktop left-alignment */
+    }
+}
