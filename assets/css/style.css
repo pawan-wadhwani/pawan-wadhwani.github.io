@@ -196,11 +196,18 @@ strong {
     }
 
     #profile-pic {
+        width: 80%;
+        max-width: 320px;
+        align-self: auto;
         text-align: center;
     }
 
     #profile img {
-        width: 160px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center top;
+        margin: 0 auto;
     }
 
     #profile-name {
