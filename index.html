@@ -175,17 +175,61 @@
         <div style="display:flex;flex-direction: column;" id="projects">
             <h1>Projects</h1>
             <div>
-                <a style="height: 14em;" class="research-thumb">
-                    <img src="assets/images/f1car.jpeg" />
+                <a href="https://drive.google.com/file/d/1M6WhnUsWadKVp52f3ZbIvaQvrncwmEZF/view?usp=sharing" target="_blank" style="height: 14em;" class="research-thumb">
+                    <video width="320" height="auto" autoplay loop muted>
+                        <source src="assets/images/ankle_exo_thumbnail.mp4" type="video/mp4">
+                    </video>
                 </a>
                 <a class="research-proj-title">
-                    F1-Tenth Autonomous Racing Car <i style="font-size: 0.85em; color: var(--accent);">(In Progress)</i>
+                    Robotic Ankle Exoskeleton
+                </a>
+                <p>
+                    <a style="color: var(--text);"><b>Pawan Wadhwani</b></a>,
+                    <a style="color: var(--text);">Atirav Seth</a>,
+                    <a style="color: var(--text);">CheHsuan Lee</a>,
+                    <a style="color: var(--text);">Gautam Balaji</a>,
+                    <a style="color: var(--text);">Narayanan Palghat Parameswaran</a>
+                    <br><i>MRSD capstone project at Carnegie Mellon University</i><br>
+                    <a href="https://drive.google.com/file/d/1jrh9arNHI01R7RpdxfySfqdBUwCUmLQQ/view?usp=sharing" target="_blank">Report</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                    <a href="https://drive.google.com/file/d/1M6WhnUsWadKVp52f3ZbIvaQvrncwmEZF/view?usp=sharing" target="_blank">Video</a>
+                </p>
+            </div>
+            <div>
+                <a href="https://youtu.be/I8U8iaFYMEM" target="_blank" style="height: 14em;" class="research-thumb">
+                    <video width="320" height="auto" autoplay loop muted>
+                        <source src="assets/images/Chess_thumbnail.mp4" type="video/mp4">
+                    </video>
+                </a>
+                <a class="research-proj-title">
+                    ArUco-Guided Autonomous Chess Piece Manipulation
+                </a>
+                <p>
+                    <a style="color: var(--text);"><b>Pawan Wadhwani</b></a>,
+                    <a style="color: var(--text);">Atirav Seth</a>,
+                    <a style="color: var(--text);">Shreenabh Agrawal</a>,
+                    <a style="color: var(--text);">Aayush Agrawal</a>s,
+                    <a style="color: var(--text);">Prakhar Mishra</a>
+                    <br><i>Project for Robot Autonomy course at Carnegie Mellon University</i><br>
+                    <a href="https://drive.google.com/file/d/1xEYjspjZPJFjoSjnrQbVO2A3glH6L-YA/view?usp=sharing" target="_blank">Report</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                    <a href="https://youtu.be/I8U8iaFYMEM" target="_blank">Video</a>
+                </p>
+            </div>
+            <div>
+                <a href="https://youtube.com/shorts/mtntDiieuDI" style="height: 14em;" class="research-thumb" target="_blank">
+                    <video width="320" height="auto" autoplay loop muted>
+                        <source src="assets/images/f1_thumbnail.mp4" type="video/mp4">
+                    </video>
+                </a>
+                <a class="research-proj-title">
+                    F1-Tenth Autonomous Racing Car
                 </a>
                 <p>
                     <a style="color: var(--text);"><b>Pawan Wadhwani</b></a>,
                     <a style="color: var(--text);">Adi Thummala</a>,
                     <a style="color: var(--text);">Alis Bao</a>,
                     <a style="color: var(--text);">Jingxuan Duan</a>
+                    <br><i>Project for F1-Tenth Autonomous Driving course at Carnegie Mellon University</i><br>
+                    <a href="https://youtube.com/shorts/mtntDiieuDI" target="_blank">Video</a>
                 </p>
             </div>
             <div>
@@ -305,12 +349,12 @@
             btn.textContent = dark ? '☀️' : '🌙';
         };
         const stored = localStorage.getItem('theme');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        apply(stored ? stored === 'dark' : prefersDark);
+        const isDark = stored === 'dark';
+        apply(isDark);
         btn.addEventListener('click', () => {
-            const isDark = document.body.classList.toggle('dark');
-            btn.textContent = isDark ? '☀️' : '🌙';
-            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            const newDark = document.body.classList.toggle('dark');
+            btn.textContent = newDark ? '☀️' : '🌙';
+            localStorage.setItem('theme', newDark ? 'dark' : 'light');
         });
     })();
 </script>
