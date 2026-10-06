@@ -1,4 +1,19 @@
 :root {
+	color-scheme: dark;
+	--grey: #ccc9bf;
+	--blue1: #90b8e0;
+	--blue2: #1e4d8c;
+	--blue3: #2a6db5;
+	--blue4: #6fa8d8;
+	--accent: #56afc0;       /* soft teal for dark mode */
+	--bg: #1a1c24;
+	--surface: #22252f;
+	--header-bg: rgba(26, 28, 36, 0.92);
+	--text: #ccc9bf;
+	--divider: #2e3245;
+}
+
+body.light {
 	--grey: #2d2d2d;
 	--blue1: #1a3a6b;
 	--blue2: #1e4d8c;
